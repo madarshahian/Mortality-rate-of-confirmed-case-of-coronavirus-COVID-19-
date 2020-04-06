@@ -63,7 +63,7 @@ def summarize_results(Country = 'US',past_days = 60):
         df_country = df_country.T.reset_index(drop=True)
     return df_country,Country
 #%%
-List_of_countries = ['Iran','US','Japan','Colombia','Afghanistan','Italy','Spain','Germany'];
+List_of_countries = ['Iran','US','Japan','Colombia','Afghanistan','Italy','Spain','Germany','South Korea','Turkey','Israel','China'];
 for item in List_of_countries:
     df_country,Country = summarize_results(Country = item,past_days = 60)
     fig,ax = plt.subplots(figsize=(30,16))
